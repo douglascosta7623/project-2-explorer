@@ -1,0 +1,123 @@
+:root {
+  --color01: #89c5cc;
+  --color02: #000000;
+  --color03: #7d7987;
+  --color04: #69b99d;
+  --color05: #e5e5e5;
+  --color06: #1f1534;
+  --color07: #f9f9f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Open sans", sans-serif;
+  border: none;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(227, 255, 248, 0) 82.08%,
+    rgba(227, 255, 248, 0.38) 100%
+  );
+  min-height: 100vh;
+}
+
+.page {
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 4.0625rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 55px;
+}
+
+nav ul {
+  display: flex;
+  gap: 48px;
+}
+
+nav li a {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--color06);
+  opacity: 0.5;
+  transition: 0.5ms;
+}
+
+nav li a:hover {
+  opacity: 1;
+}
+
+main {
+  display: flex;
+  gap: 6.375rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+h1 {
+  font-family: "Mulish", sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  width: 490px;
+}
+
+h1 span {
+  color: var(--color01);
+}
+section p {
+  font-size: 14px;
+  line-height: 28px;
+  color: var(--color03);
+
+  margin: 40px 0;
+  width: 50ch;
+}
+
+button {
+  width: 174.91px;
+  height: 56px;
+
+  /* Primary color */
+
+  background: var(--color04);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--color07);
+  font-size: 16px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #53a085;
+}
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-weight: bold;
+  color: var(--color02);
+}
+
+#balls {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
